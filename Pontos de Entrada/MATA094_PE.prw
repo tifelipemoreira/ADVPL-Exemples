@@ -3,7 +3,7 @@
 #INCLUDE "TOPCONN.CH"
 
 //Pe Desenvolvido por FELIPE Moreira para Grupo Cicopal
-//Ajuste Graccho
+
 User Function MATA094 ()
     Local aParam := PARAMIXB
     Local oObj := ""
@@ -22,23 +22,23 @@ User Function MATA094 ()
         cIdModel := aParam[3]
         lIsGrid := (Len(aParam) > 3)
 
-        nOpc := oObj:GetOperation() // PEGA A OPERA��O
+        nOpc := oObj:GetOperation() // PEGA A OPERAÇÃO
 
         If (cIdPonto == "MODELPOS")
-            //Chamada na valida��o total do modelo.
+            //Chamada na validação total do modelo.
         ElseIf (cIdPonto == "MODELVLDACTIVE")
             xRet := .T.
-            //Chamada na ativa��o do modelo de dados."
+            //Chamada na ativação do modelo de dados."
         ElseIf (cIdPonto == "FORMPOS")
-            // Chamada na valida��o total do formul�rio.
+            // Chamada na validação total do formulário.
         ElseIf (cIdPonto =="FORMLINEPRE")
-            //Chamada na pr� valida��o da linha do formul�rio.
+            //Chamada na pré validação da linha do formulário.
 
         ElseIf (cIdPonto =="FORMLINEPOS")
 
-            // Chamada na valida��o da linha do formul�rio.
+            // Chamada na validação da linha do formulário.
         ElseIf (cIdPonto =="MODELCOMMITTTS")
-            //Chamada ap�s a grava��o total do modelo e dentro da transa��o
+            //Chamada após a gravação total do modelo e dentro da transação
 
             cXorigem := GetComputerName()
 
@@ -58,11 +58,11 @@ User Function MATA094 ()
         ElseIf (cIdPonto =="MODELCOMMITNTTS")
 
         ElseIf (cIdPonto =="FORMCOMMITTTSPRE")
-            //Chamada ap�s a grava��o da tabela do formul�rio
+            //Chamada após a gravação da tabela do formulário
 
         ElseIf (cIdPonto =="FORMCOMMITTTSPOS")
 
-            //Chamada ap�s a grava��o da tabela do formul�rio
+            //Chamada após a gravação da tabela do formulário
         ElseIf (cIdPonto =="MODELCANCEL")
 
         ElseIf (cIdPonto =="BUTTONBAR")
