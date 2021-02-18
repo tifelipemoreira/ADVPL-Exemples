@@ -3,7 +3,7 @@
 #INCLUDE "TOPCONN.CH"
 
 //Pe Desenvolvido por FELIPE Moreira para Grupo Cicopal
-
+//Ajuste Graccho
 User Function MATA094 ()
     Local aParam := PARAMIXB
     Local oObj := ""
@@ -22,23 +22,23 @@ User Function MATA094 ()
         cIdModel := aParam[3]
         lIsGrid := (Len(aParam) > 3)
 
-        nOpc := oObj:GetOperation() // PEGA A OPERAÇÃO
+        nOpc := oObj:GetOperation() // PEGA A OPERAï¿½ï¿½O
 
         If (cIdPonto == "MODELPOS")
-            //Chamada na validação total do modelo.
+            //Chamada na validaï¿½ï¿½o total do modelo.
         ElseIf (cIdPonto == "MODELVLDACTIVE")
             xRet := .T.
-            //Chamada na ativação do modelo de dados."
+            //Chamada na ativaï¿½ï¿½o do modelo de dados."
         ElseIf (cIdPonto == "FORMPOS")
-            // Chamada na validação total do formulário.
+            // Chamada na validaï¿½ï¿½o total do formulï¿½rio.
         ElseIf (cIdPonto =="FORMLINEPRE")
-            //Chamada na pré validação da linha do formulário.
+            //Chamada na prï¿½ validaï¿½ï¿½o da linha do formulï¿½rio.
 
         ElseIf (cIdPonto =="FORMLINEPOS")
 
-            // Chamada na validação da linha do formulário.
+            // Chamada na validaï¿½ï¿½o da linha do formulï¿½rio.
         ElseIf (cIdPonto =="MODELCOMMITTTS")
-            //Chamada após a gravação total do modelo e dentro da transação
+            //Chamada apï¿½s a gravaï¿½ï¿½o total do modelo e dentro da transaï¿½ï¿½o
 
             cXorigem := GetComputerName()
 
@@ -58,11 +58,11 @@ User Function MATA094 ()
         ElseIf (cIdPonto =="MODELCOMMITNTTS")
 
         ElseIf (cIdPonto =="FORMCOMMITTTSPRE")
-            //Chamada após a gravação da tabela do formulário
+            //Chamada apï¿½s a gravaï¿½ï¿½o da tabela do formulï¿½rio
 
         ElseIf (cIdPonto =="FORMCOMMITTTSPOS")
 
-            //Chamada após a gravação da tabela do formulário
+            //Chamada apï¿½s a gravaï¿½ï¿½o da tabela do formulï¿½rio
         ElseIf (cIdPonto =="MODELCANCEL")
 
         ElseIf (cIdPonto =="BUTTONBAR")
